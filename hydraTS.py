@@ -1,5 +1,5 @@
 """ Celal ALAGOZ
-DRTSF: Diverse Representative Time Series Features for Time Series Classification
+HydraTS: Diverse Representative Time Series Features for Time Series Classification
 
 Required packages:
     - aeon
