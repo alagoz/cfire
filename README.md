@@ -61,7 +61,7 @@ model_feat = hydraTS(
 If you use this code, please cite:
 @article{YourHydraTS2024,
   title={HYDRA-TS: Multi-Representation Feature Learning for Efficient Time Series Classification},
-  author={Your Name},
+  author={Celal Alagoz},
   year={2024}
 }
 
