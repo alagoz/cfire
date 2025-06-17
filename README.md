@@ -23,6 +23,8 @@ cd cfire
 pip install -r requirements.txt
 ```
 
+---
+
 ## 🚀 Quick Start Guide
 
 ### 1. Install Requirements
@@ -31,44 +33,50 @@ pip install -r requirements.txt
 pip install numpy pandas scikit-learn aeon tsfresh PyWavelets dtaidistance
 ```
 
-2. Load Any UCR Dataset via aeon
+### 2. Load Any UCR Dataset via aeon
 HYDRA-TS supports any dataset from the UCR Time Series Archive via the aeon library.
 
 To change the dataset, simply modify the name_dset in the script:
 name_dset = "ArrowHead"  # Replace with any UCR dataset name
 
-✅ Example Datasets
-"ECG200"
-"GunPoint"
-"Coffee"
-"Plane"
-"ItalyPowerDemand"
-"Chinatown"
-"Beef"
+✅ Example Datasets  
+"ECG200"  
+"GunPoint"  
+"Coffee"  
+"Plane"  
+"ItalyPowerDemand"  
+"Chinatown"  
+"Beef"  
 
 To list all available datasets:
+```bash
 from aeon.datasets import get_dataset_names
 print(get_dataset_names("classification"))
+```
 
-3. Run the Demo
-python demo_.py
-Sample Output:
+### 3. Run the Demo
+python demo_.py  
+Sample Output:  
+```bash
 run:0 acc:0.9302, dur_tr_trans:0.24s, dur_clf_fit:0.12s, dur_te_trans:0.19s
+```
 
 🧠 How It Works
 Load a dataset from the UCR archive using aeon.
-Extract features using HYDRA-TS from multiple domains (Fourier, Wavelet, Hilbert, etc.).
+Extract features using CFIRE from multiple domains (Fourier, Wavelet, Hilbert, etc.).
 Train a classifier (e.g., Extremely Randomized Trees).
 Evaluate accuracy and compute time.
 
-📁 Project Structure
-hydra-ts/
-├── demo_.py       # Example: Run on any UCR dataset
-├── hydraTS.py     # crossfire implementation (user-defined)
+📁 Project Structure  
+```bash
+cfire/  
+├── demo_.py       # Example: Run on any UCR dataset  
+├── crossfire.py   # crossfire implementation (user-defined)  
 ├── README.md      # This file
+```
 
 ⚙️ Customize Feature Extraction
-You can control which feature categories are used in hydraTS:
+You can control which feature categories are used in CFIRE:
 model_feat = CFIRE(
     norms=True,
     stats=True,
