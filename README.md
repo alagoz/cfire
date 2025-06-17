@@ -37,7 +37,9 @@ pip install numpy pandas scikit-learn aeon tsfresh PyWavelets dtaidistance
 HYDRA-TS supports any dataset from the UCR Time Series Archive via the aeon library.
 
 To change the dataset, simply modify the name_dset in the script:
+```
 name_dset = "ArrowHead"  # Replace with any UCR dataset name
+```
 
 ✅ Example Datasets  
 "ECG200"  
@@ -55,17 +57,21 @@ print(get_dataset_names("classification"))
 ```
 
 ### 3. Run the Demo
+```
 python demo_.py  
+```
 Sample Output:  
 ```bash
-run:0 acc:0.9302, dur_tr_trans:0.24s, dur_clf_fit:0.12s, dur_te_trans:0.19s
+run:0 acc:0.9535, dur_tr_trans:10.59s, dur_clf_fit:0.31s, dur_te_trans:0.27s, dur_clf_pred:0.02s
+run:1 acc:0.9070, dur_tr_trans:0.59s, dur_clf_fit:0.28s, dur_te_trans:0.22s, dur_clf_pred:0.02s
+run:2 acc:0.9070, dur_tr_trans:0.52s, dur_clf_fit:0.20s, dur_te_trans:0.27s, dur_clf_pred:0.02s
 ```
 
-🧠 How It Works
-Load a dataset from the UCR archive using aeon.
-Extract features using CFIRE from multiple domains (Fourier, Wavelet, Hilbert, etc.).
-Train a classifier (e.g., Extremely Randomized Trees).
-Evaluate accuracy and compute time.
+🧠 How It Works  
+Load a dataset from the UCR archive using aeon.  
+Extract features using CFIRE from multiple domains (Fourier, Wavelet, Hilbert, etc.).  
+Train a classifier (e.g., Extremely Randomized Trees).  
+Evaluate accuracy and compute time.  
 
 📁 Project Structure  
 ```bash
@@ -75,8 +81,9 @@ cfire/
 ├── README.md      # This file
 ```
 
-⚙️ Customize Feature Extraction
-You can control which feature categories are used in CFIRE:
+⚙️ Customize Feature Extraction  
+You can control which feature categories are used in CFIRE:  
+```
 model_feat = CFIRE(
     norms=True,
     stats=True,
@@ -84,6 +91,7 @@ model_feat = CFIRE(
     temp=True,
     multiprocessing=True
 )
+```
 
-📬 Contact
+📬 Contact  
 For feedback or questions, open an issue or email celal.alagoz@gmail.com.
