@@ -34,7 +34,7 @@ pip install numpy pandas scikit-learn aeon tsfresh PyWavelets dtaidistance
 ```
 
 ### 2. Load Any UCR Dataset via aeon
-HYDRA-TS supports any dataset from the UCR Time Series Archive via the aeon library.
+CFIRE supports any dataset from the UCR Time Series Archive via the aeon library.
 
 To change the dataset, simply modify the name_dset in the script:
 ```
