@@ -1,8 +1,27 @@
-# HYDRA-TS: Diverse Representation Learning for Time Series Classification
+# ⚡ CFIRE: Cross-Representation Feature Extraction for Time Series Classification
 
-HYDRA-TS is a feature-based framework for time series classification that systematically integrates multiple mathematical representations. It achieves state-of-the-art accuracy while remaining computationally efficient.
+**CFIRE** (Cross-Representation Feature Extraction) is a feature-based time series classification framework that leverages a diverse set of time-domain, frequency-domain, and transformation-based representations. It systematically extracts, combines, and optimizes features across representations to achieve state-of-the-art classification performance.
 
 ---
+
+## 🚀 Key Features
+
+- 🔁 Cross-representation feature extraction (Time, Frequency, Derivative, DWT, FFT, Hilbert, etc.)
+- 🧠 Support for popular feature sets: [Catch22](https://github.com/chlubba/catch22), [TSFresh](https://github.com/blue-yonder/tsfresh)
+- 🔍 Integrated feature redundancy reduction and optimization
+- ⚙️ Built-in classifier selection and benchmarking (e.g., ExtraTrees, XGBoost, SVM)
+- 🧪 Parallelized feature extraction for scalable performance
+- 📊 Comprehensive experimental suite for reproducible research
+
+---
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/alagoz/cfire.git
+cd cfire
+pip install -r requirements.txt
+```
 
 ## 🚀 Quick Start Guide
 
@@ -10,6 +29,7 @@ HYDRA-TS is a feature-based framework for time series classification that system
 
 ```bash
 pip install numpy pandas scikit-learn aeon tsfresh PyWavelets dtaidistance
+```
 
 2. Load Any UCR Dataset via aeon
 HYDRA-TS supports any dataset from the UCR Time Series Archive via the aeon library.
@@ -44,26 +64,18 @@ Evaluate accuracy and compute time.
 📁 Project Structure
 hydra-ts/
 ├── demo_.py       # Example: Run on any UCR dataset
-├── hydraTS.py     # HYDRA-TS implementation (user-defined)
+├── hydraTS.py     # crossfire implementation (user-defined)
 ├── README.md      # This file
 
 ⚙️ Customize Feature Extraction
 You can control which feature categories are used in hydraTS:
-model_feat = hydraTS(
+model_feat = CFIRE(
     norms=True,
     stats=True,
     series=True,
     temp=True,
     multiprocessing=True
 )
-
-📎 Citation
-If you use this code, please cite:
-@article{YourHydraTS2024,
-  title={HYDRA-TS: Multi-Representation Feature Learning for Efficient Time Series Classification},
-  author={Celal Alagoz},
-  year={2024}
-}
 
 📬 Contact
 For feedback or questions, open an issue or email celal.alagoz@gmail.com.
