@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15695653.svg)](https://doi.org/10.5281/zenodo.15695653)
 # ⚡ CFIRE: Cross-Representation Feature Extraction for Time Series Classification
 
 **CFIRE** (Cross-Representation Feature Extraction) is a feature-based time series classification framework that leverages a diverse set of time-domain, frequency-domain, and transformation-based representations. It systematically extracts, combines, and optimizes features across representations to achieve state-of-the-art classification performance.
