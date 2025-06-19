@@ -1,9 +1,11 @@
-cff-version: 1.1.0
+cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 authors:
 - family-names: Alagöz
   given-names: Celal
-orcid: https://orcid.org/0000-0001-9812-1473
-title:alagoz/cfire: CFIRE v1.0 – A Reproducible and Interpretable Cross-Representation TSC Framework for Research
+  orcid: https://orcid.org/0000-0001-9812-1473
+title: "CFIRE v1.0 – A Reproducible and Interpretable Cross-Representation TSC Framework for Research"
 version: v1.0.0
+doi: 10.5281/zenodo.15695652
 date-released: 2025-06-19
+url: "https://github.com/alagoz/cfire"
