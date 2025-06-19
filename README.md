@@ -60,11 +60,11 @@ print(get_dataset_names("classification"))
 ```
 python demo_.py  
 ```
-Sample Output:  
+Sample Output on an Intel i7-11700 @2.50 GHz CPU with 8 cores and 32 GB RAM:  
 ```bash
-run:0 acc:0.9535, dur_tr_trans:10.59s, dur_clf_fit:0.31s, dur_te_trans:0.27s, dur_clf_pred:0.02s
-run:1 acc:0.9070, dur_tr_trans:0.59s, dur_clf_fit:0.28s, dur_te_trans:0.22s, dur_clf_pred:0.02s
-run:2 acc:0.9070, dur_tr_trans:0.52s, dur_clf_fit:0.20s, dur_te_trans:0.27s, dur_clf_pred:0.02s
+run:0 acc:0.9535, dur_tr_trans:4.59s, dur_clf_fit:0.15s, dur_te_trans:4.60s, dur_clf_pred:0.02s
+run:1 acc:0.9302, dur_tr_trans:0.57s, dur_clf_fit:0.15s, dur_te_trans:0.42s, dur_clf_pred:0.00s
+run:2 acc:0.9070, dur_tr_trans:0.17s, dur_clf_fit:0.11s, dur_te_trans:0.10s, dur_clf_pred:0.01s
 ```
 
 🧠 How It Works  
