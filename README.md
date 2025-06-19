@@ -69,10 +69,10 @@ run:2 acc:0.9070, dur_tr_trans:0.17s, dur_clf_fit:0.11s, dur_te_trans:0.10s, dur
 ```
 
 🧠 How It Works  
-Load a dataset from the UCR archive using aeon.  
-Extract features using CFIRE from multiple domains (Fourier, Wavelet, Hilbert, etc.).  
-Train a classifier (e.g., Extremely Randomized Trees).  
-Evaluate accuracy and compute time.  
+- Load a dataset from the UCR archive using aeon.  
+- Extract features using CFIRE from multiple domains (Fourier, Wavelet, Hilbert, etc.).  
+- Train a classifier (e.g., Extremely Randomized Trees).  
+- Evaluate accuracy and compute time.  
 
 📁 Project Structure  
 ```bash
